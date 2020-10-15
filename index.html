@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <title>International Daddy</title>
+   <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Rahul">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <!-- take input from user-->
+    <div class="style-me">
+      <div class="form-group">
+        <label>Enter your name</label>
+        <input placeholder="your name" type="text" id="my-name">
+      </div>
+      <div class="form-group">
+        <label>Enter your father's name</label>
+        <input placeholder="Father's name" type="text" id="father-name">
+      </div>
+      <div class="btn form-group">
+        <button id="button" onclick="myfunction()">Submit</button>
+      </div>
+    </div>
+    <script>
+      function myfunction(){
+  var x = document.getElementById("my-name").value;
+  var y = document.getElementById("father-name").value;
+  if(x.length == 0 || y.length == 0)
+  {
+    alert("field can't be empty");
+  }
+  else
+  {
+    var result = document.createElement("div");
+    var temp;
+    y= y.toLowerCase();
+    if(y == "rahul")
+    temp = x + " is son of " +y ;
+    else
+    temp = "Wrong" + " "+ x + " is Rahul's son";
+    result.innerHTML = temp;
+    document.body.appendChild(result);
+  }
+  //document.body.removeChild(result);
+}
+    </script>
+  </body>
+</html>
