@@ -1,0 +1,16 @@
+h1, h2 {
+  font-family: Lato;
+}
+body{
+  background-color: aquamarine;
+}
+.style-me{
+  display:flex;
+  justify-content: center;
+
+}
+.form-group{
+  display:flex;
+  margin:10px;
+  justify-content: left;
+}
